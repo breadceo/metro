@@ -24,6 +24,10 @@ const defaultPlugins = [
   [require('@babel/plugin-proposal-optional-catch-binding')],
   [require('@babel/plugin-transform-block-scoping')],
   [
+    require('@babel/plugin-proposal-decorators'),
+    { legacy: true }
+  ],
+  [
     require('@babel/plugin-proposal-class-properties'),
     // use `this.foo = bar` instead of `this.defineProperty('foo', ...)`
     {loose: true},
